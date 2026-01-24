@@ -71,6 +71,11 @@ impl Timer {
         self.elapsed_simulation_time
     }
 
+    pub fn get_current_sim_time(&mut self) -> DateTime<Utc> {
+        self.tick();
+        self.simulated_time
+    }
+
     pub fn get_formated_elapsed_simulation_time(&mut self) -> String {
         self.tick();
         let simulated_time = calendar_diff(self.initial_date_time, self.simulated_time);

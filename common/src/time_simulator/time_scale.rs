@@ -5,6 +5,7 @@ pub enum TimeScale {
     OneHourPerSecond,
     EightHoursPerSecond,
     OneDayPerSecond,
+    OneMonthPerSecond,
 }
 
 impl TimeScale {
@@ -15,6 +16,7 @@ impl TimeScale {
             TimeScale::OneHourPerSecond => 3600.0,
             TimeScale::EightHoursPerSecond => 8.0 * 3600.0,
             TimeScale::OneDayPerSecond => 24.0 * 3600.0,
+            TimeScale::OneMonthPerSecond => 30.0 * 24.0 * 3600.0,
         }
     }
 }
