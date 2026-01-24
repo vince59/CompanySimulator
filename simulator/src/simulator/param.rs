@@ -2,9 +2,9 @@ use common::{
     self,
     game::{
         Company,
-        company::{Employee, EmployeeType, EventScheduler, Service, ServiceType},
+        company::{Employee, EmployeeType,Service, ServiceType},
     },
-    time_simulator::{SimDateTime, TimeScale, Timer},
+    time_simulator::{SimDateTime, TimeScale, Timer, EventScheduler},
 };
 
 #[derive(Debug)]
