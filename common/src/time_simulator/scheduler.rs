@@ -1,5 +1,6 @@
+use crate::game::{company::Company, events::SalaryPaymentEvent};
 use chrono::{DateTime, Datelike, Utc};
-use crate::game::company::{Company,SalaryPaymentEvent};
+
 pub enum EventType {
     SalaryPayment,
 }
@@ -135,5 +136,4 @@ impl EventScheduler {
         let salary_event = SalaryPaymentEvent::new(EventRecurrence::EndOfMonth);
         self.add(Box::new(salary_event));
     }
-
 }
