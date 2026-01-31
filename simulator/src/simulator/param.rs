@@ -93,7 +93,7 @@ fn initialize_services() -> Vec<Service> {
 impl Default for SimulatorParameters {
     fn default() -> Self {
         SimulatorParameters {
-            time_scale: TimeScale::OneMonthPerSecond,
+            time_scale: TimeScale::OneDayPerSecond,
             initial_date_time: SimDateTime {
                 year: 2026,
                 month: 1,

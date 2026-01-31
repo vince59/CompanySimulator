@@ -5,7 +5,6 @@ use crate::time_simulator::{
     time_scale::{TimeScale, SimDateTime},
 };
 
-
 pub struct Timer {
     time_scale: TimeScale,
     simulated_time: DateTime<Utc>,
