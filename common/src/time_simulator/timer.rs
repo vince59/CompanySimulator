@@ -88,4 +88,8 @@ impl Timer {
             simulated_time.seconds
         )
     }
+
+    pub fn set_time_scale(&mut self, time_scale: TimeScale) {
+        self.time_scale = time_scale;
+    }
 }

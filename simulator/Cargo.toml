@@ -5,3 +5,6 @@ edition = "2024"
 
 [dependencies]
 common = { path = "../common" }
+tokio = { version = "1.0", features = ["full"] }
+axum = { version="0.8.1"  }
+minijinja = "2.3.1"

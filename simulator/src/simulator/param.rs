@@ -93,7 +93,7 @@ fn initialize_services() -> Vec<Service> {
 impl Default for SimulatorParameters {
     fn default() -> Self {
         SimulatorParameters {
-            time_scale: TimeScale::OneDayPerSecond,
+            time_scale: TimeScale::OneHourPerSecond,
             initial_date_time: SimDateTime {
                 year: 2026,
                 month: 1,
@@ -130,5 +130,12 @@ impl SimulatorState {
             company: parameters.company,
             event_scheduler: EventScheduler::new(),
         }
+    }
+
+    pub fn tick(&mut self) {
+        self.event_scheduler.tick(
+            self.timer.get_current_sim_time(),
+            &mut self.company,
+        );
     }
 }

@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Compagny Simulator</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="/task/filter?filter=DailyWork">En cours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/task/filter?filter=WorkCompleted">Réalisées du jour</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/task/filter?filter=Blocked">Bloquées</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/task/filter?filter=Quick">Rapides</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/task/filter?filter=UnClassified">Non classées</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/task/filter?filter=ByProject">Par projet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/task">Toutes les tâches</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/task/create">Nouvelle tâche</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tableau de bord
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/">Truc</a></li>
+            <li><a class="dropdown-item" href="/">Bidule</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search" action="/" method="POST">
+        <input id="" name="search_term" id="search_term" class="form-control me-2" type="search" placeholder="Recherche"
+          aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Recherche</button>
+      </form>
+    </div>
+  </div>
+</nav>
